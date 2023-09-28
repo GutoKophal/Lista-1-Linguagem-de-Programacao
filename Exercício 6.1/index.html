@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Exercício 6.1</title>
+
+    <script>
+
+/*
+O código apresenta o problema de assincronia das chamadas setTimeout, onde as funções dentro delas não são executadas imediatamente. 
+Isso resulta em undefined quando você tenta imprimir os valores de num1, num2 e num3 logo após as chamadas setTimeout. 
+Para resolver isso, você pode usar Promises ou callbacks para garantir que as operações sejam concluídas antes de acessar os valores. 
+Isso ocorre porque o JavaScript continua a executar o código principal enquanto as funções dentro do setTimeout aguardam para 
+serem executadas. O uso de Promises ou callbacks permite lidar com essa assincronia de forma mais controlada.
+*/
+
+    var num1, num2, num3;
+
+    function gerarNumeroAleatorio() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        const numero = Math.random();
+        resolve(numero);
+        }, 1000);
+    });
+    }
+
+    gerarNumeroAleatorio()
+    .then((numero) => {
+        num1 = numero;
+        console.log(num1);
+        return gerarNumeroAleatorio();
+    })
+    .then((numero) => {
+        num2 = numero;
+        console.log(num2);
+        return gerarNumeroAleatorio();
+    })
+    .then((numero) => {
+        num3 = numero;
+        console.log(num3);
+    });
+    </script>
+</head>
+<body> </body>
+</html>

@@ -1,0 +1,9 @@
+Exercício 6.5: Descreva com suas palavras, para que serve o template string em JavaScript.
+
+Resposta: O template string em JavaScript é uma característica que permite criar strings de forma mais flexível e legível, 
+especialmente quando você deseja incorporar valores de variáveis ou expressões dentro de uma string. 
+Em vez de usar a concatenação tradicional de strings com o operador +, você pode usar template strings para inserir variáveis 
+ou expressões diretamente dentro de uma string, cercando-a com acentos graves (crases) ( ). Os ${} dentro do template string permitem 
+que você insira variáveis ou expressões diretamente na string, tornando o código mais limpo e mais fácil de manter. 
+Além disso, pode-se incluir expressões JavaScript dentro dos ${} e o resultado será automaticamente convertido em uma string e 
+incorporado na string maior.

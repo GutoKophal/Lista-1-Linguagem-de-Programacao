@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Exercício 4.2</title>
+    <script>
+
+    var n = 7;
+    function fatorial(n) {
+        if (n === 0 || n === 1) {
+            return 1;
+        } else {
+            let fatorial = 1;
+            for (let i = 2; i <= n; i++) {
+                fatorial *= i;
+            }
+        return fatorial;
+        }
+    }
+
+    const resultado = fatorial(n);
+    console.log(`O fatorial de ${n} é ${resultado}`);
+
+    </script>
+        
+</head>
+<body> 
+</body>
+</html>

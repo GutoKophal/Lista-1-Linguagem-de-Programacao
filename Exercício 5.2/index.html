@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ecercício 5.2</title>
+    <script>
+/*
+ resultado inesperado (55) ocorre devido a uma coerção de tipo automática em JavaScript. 
+ A função soma está tentando adicionar os valores de num1 e num2, mas num2 é uma string que contém "5", não um número.
+ Assim o avaScript tenta realizar a operação de adição, mas como um dos operandos é uma string, 
+ ele concatena as duas strings em vez de realizar uma adição numérica.
+ 
+ Para resolver esse problema basta garantir que ambos valores sejam do tipo númerico antes de realizar a operação.
+ E para isso a opção mais fácil seria converter o num2 para um número. Assun utilizando a função parseInt para converter a string em 
+ número o resultado obtido é 10. Código corrigido abaixo: 
+*/
+        function soma(a, b) {
+            return a + b;
+        }
+
+        let num1 = 5;
+        let num2 = "5";
+
+        console.log(soma(num1, parseInt(num2))); 
+    </script>
+</head>
+
+<body></body>
+</html>

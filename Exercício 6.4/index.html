@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 6.4</title>
+
+    <script>
+    let numero = 1;
+
+    const intervalo = setInterval(function() {
+        console.log(numero);
+        numero++;
+
+        if (numero > 10) {
+            clearInterval(intervalo); // Encerra o intervalo após escrever o número 10
+        }
+    }, 1000); // Intervalo de 1 segundo (1000 milissegundos)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+Exercício 7.1: Um dos próximos temas de estudos que vamos ter nadisciplina é o TypeScript. Pesquise o que é TypeScript e 
+para que serve. Resuma comoresposta dessa questão o que é TypeScript e para que ele serve.
+
+Resposta: TypeScript é uma linguagem de programação de código aberto que se baseia no JavaScript e é usada principalmente para 
+o desenvolvimento de aplicativos web e outras aplicações de software. Ela foi criada pela Microsoft e fornece uma camada de tipagem 
+estática opcional sobre o JavaScript. O TypeScript é usado para melhorar a qualidade, a escalabilidade e a manutenção de código 
+JavaScript. Ele permite que os desenvolvedores declarem tipos de dados para variáveis, parâmetros de função e valores de retorno, 
+tornando o código mais seguro e menos propenso a erros. Além disso, o TypeScript fornece um ambiente de desenvolvimento mais rico, 
+com ferramentas de autocompletar, validação de código e documentação aprimorada. Isso é especialmente útil em projetos grandes e 
+complexos, onde a tipagem estática e outras funcionalidades do TypeScript ajudam a evitar erros e melhorar a produtividade.

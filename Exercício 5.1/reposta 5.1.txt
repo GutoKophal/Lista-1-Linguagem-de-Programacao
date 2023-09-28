@@ -1,0 +1,10 @@
+Exercício: Explique textualmente (com suas palavras) o motivo de terem ocorrido dois erros na execução dos códigos apresentados na primeira figura do
+Capítulo 5.
+
+Resposta: O primeiro erro ocorre por conta de que está sendo usado variáveis locais declaradas com 'let', assim cada variável fica limitada 
+bloco em que foi declarada. Então quando a variável 'v3' é imprimida o JavaScript não consegue encontra-lá resultando no erro que é exibido.
+Já o segundo erro ocorre por conta de que está sendo tentado reatribuir um valor a uma variável declarada como const, e isso não é permitido 
+para variáveis constantes. As variáveis constantes (const) não podem ser reatribuídas após a sua declaração inicial.
+
+
+
